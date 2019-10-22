@@ -3,6 +3,7 @@ package pl.training.shopping.shoppingservice.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,7 +16,8 @@ public class ShoppingCart {
     @OneToOne
     private User user;
     @OneToMany(mappedBy = "shoppingCart")
-    private List<Product> productList;
+    private List<Product> productList = new ArrayList<>();
+    private Long pieces;
     private String status;
     private Long paymentId;
 }
