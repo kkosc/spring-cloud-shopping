@@ -16,4 +16,8 @@ public class Product {
     private Long unitPrice;
     @ManyToOne
     private ShoppingCart shoppingCart;
+
+    public void decrement(Long pieces){
+        this.pieces = this.pieces - pieces;
+    }
 }
