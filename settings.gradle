@@ -19,3 +19,4 @@ rootProject.name = 'spring-cloud-shopping'
 
 include 'configuration'
 include 'discovery'
+include 'gateway'
