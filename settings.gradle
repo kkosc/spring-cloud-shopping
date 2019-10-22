@@ -18,3 +18,4 @@ include 'services:webservice'
 rootProject.name = 'spring-cloud-shopping'
 
 include 'configuration'
+include 'discovery'
